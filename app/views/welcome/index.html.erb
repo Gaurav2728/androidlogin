@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <h1 class="display-2">Welcome</h1>
+  <p class="lead">
+    This web application was created by
+    <%= link_to('Gaurav Sharma', 'http://www.gauravatrai.com') %>
+    and available at <%= link_to('Github', 'https://github.com/Gaurav2728/androidlogin') %>.
+    Hosted on <%= link_to('Heroku', 'https://www.heroku.com') %>.
+  </p>
+
+  <%= link_to('Register Now', new_user_registration_path, class: 'btn btn-primary btn-lg') %>
+  <%= link_to('Sign In', new_user_session_path, class: 'btn btn-primary btn-lg') %>
+
+</div>
