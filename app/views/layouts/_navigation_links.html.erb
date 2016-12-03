@@ -1,2 +1,7 @@
 <%# add navigation links to this file %>
 <li class='nav-item'><%= link_to 'About', '#', class: 'nav-link' %></li>
+<% if current_user %>
+  <li class='nav-pills', style="float: right;" >
+    <%= link_to 'Sign Out', destroy_user_session_path, class: 'nav-link active', method: :delete %>
+  </li>
+<% end %>
